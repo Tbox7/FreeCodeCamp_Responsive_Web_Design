@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Gamers Survey</title>
+</head>
+<body>
+    <h1 id=title>Who are Gamers</h1>
+    <p id="description">please fill out</p>
+    
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="email"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="age">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Favorite Genre of Games </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="na">Choose one</option>
+                <option value="FPS">FPS</option>
+                <option value="RPG">RPG</option>
+                <option value="MMO">MMO</option>
+                <option value="Sim">Simulator</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Employment Status:</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="employed" checked> Full-time job <br>
+            <input type="radio" class="radio-inline" name="gender" value="freelancer"> Part-time job <br>
+            <input type="radio" class="radio-inline" name="gender" value="applier"> Looking for a job<br>
+            <input type="radio" class="radio-inline" name="gender" value="unemployed"> I am a student.(Unemployed)
+          </div>
+          <div id="button-area"><br>
+            <label id="os-label"><b>What OS do You Use for Gaming? </b></label><br>
+            <input type="checkbox" name="1" value="windows" checked>Windows-OS<br>
+            <input type="checkbox" name="2" value="linux"> Linux-OS<br>
+            <input type="checkbox" name="3" value="mac">Mac-OS<br>
+            <input type="checkbox" name="4" value="console">Console<br>
+          </div>
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any additional information?</label><br>
+            <textarea style= height:120px;" class="form" placeholder="You may talk about your favirote game"></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
